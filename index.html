@@ -1,770 +1,265 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en" data-theme="dark">
 <head>
-  <!-- Basic -->
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/me.png" type="">
-
-  <title> Pongsakorn's Portfolio </title>
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
-  <!-- font awesome style -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pongsakorn Srimang — Portfolio</title>
+  <meta name="description" content="Pongsakorn Srimang (Thonkla) — Computer Engineering graduate from KMUTT focused on data science, recommendation systems and full-stack web development." />
+  <meta name="author" content="Pongsakorn Srimang" />
+  <meta property="og:title" content="Pongsakorn Srimang — Portfolio" />
+  <meta property="og:description" content="Data science, recommendation systems and full-stack projects." />
+  <meta property="og:image" content="https://thonkla.github.io/images/me.png" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f0b2e" />
+  <link rel="icon" href="images/me.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
   <link href="css/font-awesome.min.css" rel="stylesheet" />
-
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-
+  <link href="css/main.css" rel="stylesheet" />
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
 </head>
-
 <body>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <div class="hero_area">
-
-    <div class="hero_bg_box">
-      <div class="bg_img_box">
-        <img src="images/hero-bg.png" alt="">
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">thonkla<span>.</span></a>
+      <nav aria-label="Primary">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle colour theme"><i class="fa fa-moon-o"></i></button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><i class="fa fa-bars"></i></button>
       </div>
     </div>
+  </header>
 
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <span>
-              Pongsakorn's Portfolio
-            </span>
-          </a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about_me"> About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#education">Education</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Pongsakorn Srimang</h1>
+          <p class="role"><span id="typed">Aspiring Data Scientist</span><span class="caret">|</span></p>
+          <p class="lead">Computer Engineering · King Mongkut’s University of Technology Thonburi. I turn messy data into decisions and ship the apps that use them.</p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View projects <i class="fa fa-arrow-right"></i></a>
+            <a class="btn ghost" href="CV/Pongsakorn_CV.pdf" download><i class="fa fa-download"></i> Download CV</a>
           </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
-    <!-- slider section -->
-    <section class="slider_section ">
-      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6 ">
-                  <div class="detail-box"><br>
-                    <h1><br>
-                      Hello <br>
-                      I'm Pongsakorn Srimang
-                    </h1>
-                    <p>
-                      Bachelor of Engineering Program in Computer Engineering<br>
-                      King Mongkut’s University of Technology Thonburi
-                    </p>
-                    <!-- <div class="btn-box">
-                      <a href="" class="btn1">
-                        Read More
-                      </a>
-                    </div> -->
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/me.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="socials">
+            <a href="https://github.com/Thonkla" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa fa-github"></i></a>
+            <a href="https://linkedin.com/in/pongsakorn-srimang" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/pongsakorn.srimang.9/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="mailto:thonkrath@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
           </div>
-          <!-- <div class="carousel-item ">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6 ">
-                  <div class="detail-box">
-                    <h1>
-                      Crypto <br>
-                      Currency
-                    </h1>
-                    <p>
-                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6 ">
-                  <div class="detail-box">
-                    <h1>
-                      Crypto <br>
-                      Currency
-                    </h1>
-                    <p>
-                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
-        <ol class="carousel-indicators">
-          <!-- <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
-          <li data-target="#customCarousel1" data-slide-to="1"></li>
-          <li data-target="#customCarousel1" data-slide-to="2"></li> -->
-        </ol>
+        <div class="hero-img reveal">
+          <div class="blob"></div>
+          <img src="images/me.png" alt="Portrait of Pongsakorn Srimang" />
+        </div>
       </div>
-
     </section>
-    <!-- end slider section -->
-  </div>
 
-
-  <!-- service section -->
-
-  <section class="service_section layout_padding">
-    <!-- <div class="service_container">
-      <div class="container ">
-        <div class="heading_container heading_center">
-          <h2>
-            First of all, Let's <span>guess</span> your gender
-          </h2>
-          <p>
-            Choose the 3 answers that best apply to you
-          </p>
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <div class="about-img reveal">
+          <img src="images/me_in_darks.png" alt="Pongsakorn in dark-themed portrait" loading="lazy" />
         </div>
-        <div class="row">
-          <div class="col-md-4 ">
-            <div class="box ">
-
-              <div class="detail-box">
-                <h5>
-                  Height
-                </h5>
-                <p>
-                  ...
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ">
-            <div class="box ">
-
-              <div class="detail-box">
-                <h5>
-                  Weight
-                </h5>
-                <p>
-                  ...
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ">
-            <div class="box ">
-
-              <div class="detail-box">
-                <h5>
-                  Age
-                </h5>
-                <p>
-                  ...
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="btn-box">
-          <a href="">
-            Predict
-          </a>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4 ">
-            <div class="box ">
-              <div class="detail-box">
-                <h5>
-                  Your gender is
-                </h5>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div> -->
-  </section>
-
-  <!-- end service section -->
-
-
-  <!-- about section -->
-
-  <section class="about_section layout_padding">
-    <div class="container  ">
-      <div class="heading_container heading_center" id="about_me">
-        <h2>
-          About <span>Me</span>
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/me_in_darks.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <h3>
-              My name's Pongsakorn Srimang (Thonkla)
-            </h3>
-            <p>
-              Self-independent and friendly individual.
-            </p>
-            <p>
-              From the personality test I am a logician(INTP-A)(www.16personalities.com).
-            </p>
-            <p>
-              My future goal is to become a senior data scientist.
-            </p>
-            <p>
-              I'm interested in Data-driven decision making and Visualization storytelling.
-            </p>
-            <a href="CV/Pongsakorn_CV.pdf" download>
-              Download my CV
-            </a>
+        <div class="reveal">
+          <h2 class="title">About <span>me</span></h2>
+          <p>I'm <strong>Pongsakorn Srimang (Thonkla)</strong> — a self-driven, friendly engineer who enjoys working both independently and in teams.</p>
+          <p>My goal is to grow into a <strong>senior data scientist</strong>. I'm most interested in <em>data-driven decision making</em> and <em>storytelling through visualisation</em>.</p>
+          <p class="muted">Personality type: Logician (INTP-A) — curious, analytical, likes building systems that make sense.</p>
+          <div class="stats">
+            <div><b data-count="6">0</b><span>Projects</span></div>
+            <div><b data-count="15">0</b><span>Tools & libs</span></div>
+            <div><b data-count="3">0</b><span>Domains</span></div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- end about section -->
-
-  <!-- why section -->
-
-  <section class="why_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center" id="education">
-        <h2>
-          <span>Education</span>
-        </h2>
-      </div>
-      <div class="why_container">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/KMUTT_logo.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Studying in 4rd year of Computer Engineering
-            </h5>
-            <p>
-              at King Mongkut’s University of Technology Thonburi
-            </p>
-          </div>
+    <!-- Skills -->
+    <section class="section alt" id="skills">
+      <div class="wrap">
+        <h2 class="title center reveal"><span>Skills</span></h2>
+        <div class="skills-grid">
+          <article class="card reveal">
+            <img src="images/PL.png" alt="" loading="lazy" />
+            <h3>Programming</h3>
+            <ul class="bars">
+              <li><span>Python</span><i style="--w:75%"></i></li>
+              <li><span>SQL</span><i style="--w:70%"></i></li>
+              <li><span>JavaScript</span><i style="--w:65%"></i></li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <img src="images/DT.png" alt="" loading="lazy" />
+            <h3>Data tools</h3>
+            <div class="chips"><span>pandas</span><span>numpy</span><span>scikit-learn</span><span>matplotlib</span><span>seaborn</span><span>Excel</span><span>Google Sheets / GAS</span><span>Power BI</span></div>
+          </article>
+          <article class="card reveal">
+            <img src="images/WD.png" alt="" loading="lazy" />
+            <h3>Web development</h3>
+            <div class="chips"><span>React</span><span>Node.js</span><span>Express</span><span>HTML/CSS</span><span>PostgreSQL</span><span>MySQL</span><span>Postman</span></div>
+          </article>
+          <article class="card reveal">
+            <img src="images/GIT.png" alt="" loading="lazy" />
+            <h3>Others</h3>
+            <div class="chips"><span>Git</span><span>REST API</span><span>Django</span><span>Gradio</span></div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- end why section -->
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <h2 class="title center reveal"><span>Projects</span></h2>
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="data">Data / ML</button>
+          <button data-filter="web">Web</button>
+          <button data-filter="mobile">Mobile</button>
+        </div>
+        <div class="projects" id="projectList">
 
-  <!-- team section -->
-  <section class="team_section layout_padding">
-    <div class="container-fluid">
-      <div class="heading_container heading_center" id="skills">
-        <h2 class="">
-          <span>Skills</span>
-        </h2>
+          <article class="project reveal" data-tags="data web">
+            <div class="p-img"><img src="images/PlaceMate.png" alt="PlaceMate screenshot" loading="lazy" /></div>
+            <div class="p-body">
+              <span class="date">Oct 2024 – Apr 2025 · Senior project</span>
+              <h3>PlaceMate — location recommendation & travel planning</h3>
+              <p>Content-based recommender that suggests places from user similarity, inside a full-stack web app built by a team of 3.</p>
+              <details>
+                <summary>Highlights</summary>
+                <ul>
+                  <li>Led system architecture design for the whole system.</li>
+                  <li>Collected preference data via Google Forms; enriched places with the Google Maps API.</li>
+                  <li>Built a pandas pipeline turning raw JSON into Excel / PostgreSQL.</li>
+                  <li>Designed the content-based filtering algorithm and integrated it into the app.</li>
+                  <li>Delivered consistent personalised results across test scenarios.</li>
+                </ul>
+              </details>
+              <div class="tags"><span>Python</span><span>pandas</span><span>PostgreSQL</span><span>RecSys</span></div>
+              <a class="link" href="https://github.com/Thonkla/PlaceMate-WepAppForPersonalRecommendPlaces" target="_blank" rel="noopener"><i class="fa fa-github"></i> View code</a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="mobile data">
+            <div class="p-img"><img src="images/Savia.png" alt="Savia app" loading="lazy" /></div>
+            <div class="p-body">
+              <span class="date">Mar 2025</span>
+              <h3>Savia — personal expense tracker</h3>
+              <p>Mobile app with real-time Google Sheets sync and dashboards; insights from 2 months of data cut unnecessary spending by <strong>11%</strong>.</p>
+              <details>
+                <summary>Highlights</summary>
+                <ul>
+                  <li>Integrated Google Sheets / Apps Script API for real-time sync.</li>
+                  <li>Bar, pie and line dashboards to monitor spending behaviour.</li>
+                </ul>
+              </details>
+              <div class="tags"><span>Mobile</span><span>Apps Script</span><span>Data viz</span></div>
+              <a class="link" href="https://github.com/Thonkla/Savia-MobileAppExpensesAnalysis" target="_blank" rel="noopener"><i class="fa fa-github"></i> View code</a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="data">
+            <div class="p-img logo"><img src="images/python_logo.png" alt="Python logo" loading="lazy" /></div>
+            <div class="p-body">
+              <span class="date">May 2023</span>
+              <h3>Fish Swarm & Genetic Algorithm optimisation</h3>
+              <p>Implemented FSA, GA and fitness functions in Python to plan a trip: minimise cost, maximise cities visited, stay within 14 days.</p>
+              <div class="tags"><span>Python</span><span>Optimisation</span><span>Research</span></div>
+              <a class="link" href="https://github.com/Thonkla/fish_swarm_optimization_and_genetic_algorithm" target="_blank" rel="noopener"><i class="fa fa-github"></i> View code</a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="web">
+            <div class="p-img logo"><img src="images/dj_pos_logo.png" alt="Django logo" loading="lazy" /></div>
+            <div class="p-body">
+              <span class="date">Nov 2023</span>
+              <h3>Order queue system for cafés & restaurants</h3>
+              <p>Customers order online, get a queue number, and watch a live queue monitor; staff advance the queue with one click.</p>
+              <div class="tags"><span>Django</span><span>PostgreSQL</span><span>Back-end</span></div>
+              <a class="link" href="https://github.com/Thonkla/django_postgre_queue_app" target="_blank" rel="noopener"><i class="fa fa-github"></i> View code</a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="web data">
+            <div class="p-img logo"><img src="images/gradio_logo.png" alt="Gradio logo" loading="lazy" /></div>
+            <div class="p-body">
+              <span class="date">Generative AI</span>
+              <h3>English practice web UI</h3>
+              <p>Gradio app powered by the ChatGPT API for practising writing, speaking and listening.</p>
+              <div class="tags"><span>Gradio</span><span>OpenAI API</span><span>Python</span></div>
+              <a class="link" href="https://github.com/Thonkla/gradio_English_skills_practice_using_generatuve_ai" target="_blank" rel="noopener"><i class="fa fa-github"></i> View code</a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="data">
+            <div class="p-img logo"><img src="images/scikit_logo.png" alt="scikit-learn logo" loading="lazy" /></div>
+            <div class="p-body">
+              <span class="date">Coursework</span>
+              <h3>Machine learning course</h3>
+              <p>Supervised (CNN digit classification, sentiment analysis), unsupervised (clustering, dimensionality reduction) and reinforcement learning (robot navigation).</p>
+              <div class="tags"><span>scikit-learn</span><span>CNN</span><span>RL</span></div>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="team_container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/PL.png" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Programming
-                </h5>
-                <p>
-                  Python (intermediate),<br>
-                  SQL (Intermediate),<br>
-                  Javascript (Intermediate) <br>
-                  <br>
-                  <br>
-                </p>
-              </div>
-              
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/DT.png" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Data Tools
-                </h5>
-                <p>
-                  Google Sheets(GAS)<br>
-                  Excel, numpy,<br>
-                  pandas, scikit-learn,<br>
-                  matplotlib, seaborn,<br>
-                  Power BI (Beginner)<br>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/WD.png" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Web Development
-                </h5>
-                <p>
-                  React, Node.js,<br>
-                  Express, HTML,<br>
-                  CSS, PostgreSQL,<br>
-                  MySQL, Postman<br><br>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/GIT.png" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Others
-                </h5>
-                <p>
-                  Git,<br>
-                  REST API<br>
-                  <br><br><br>
-                </p>
-              </div>
-              <!-- <div class="social_box">
-                <a href="#">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
-              </div> -->
+    </section>
+
+    <!-- Education -->
+    <section class="section alt" id="education">
+      <div class="wrap">
+        <h2 class="title center reveal"><span>Education</span></h2>
+        <div class="timeline reveal">
+          <div class="t-item">
+            <img src="images/KMUTT_logo.png" alt="KMUTT logo" loading="lazy" />
+            <div>
+              <span class="date">Bachelor of Engineering</span>
+              <h3>Computer Engineering</h3>
+              <p>King Mongkut’s University of Technology Thonburi (KMUTT), Bangkok</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- end team section -->
+    </section>
 
-
-  <!-- client section -->
-
-  <section class="client_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center psudo_white_primary mb_45" id="projects">
-        <h2>
-          <span>Projects</span>
-        </h2>
-      </div>
-      <div class="carousel-wrap ">
-        <div class="owl-carousel client_owl-carousel">
-
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/PlaceMate.png" alt="" class="box-img">
-              </div>
-              <div class="detail-box">
-                <div class="client_id">
-                  <div class="client_info">
-                    <h6>
-                      [Senior Project] Location Recommendation and Travel Planning App – PlaceMate | Oct 2024 - Apr 2025
-                    </h6>
-                    <p>
-                      Data Collection, Cleaning, and Analysis, Recommendation System, Full Stack Web Development
-                    </p>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  1.Led system architecture design for the entire system.<br>
-                  2.Collected user preference data via Google Form and processed location data using the Google Maps API<br>
-                  3.Created a data pipeline to transform JSON data into structured format (Excel, PostgreSQL) using Python (pandas)<br>
-                  4.Designed and implemented a content-based filtering algorithm to recommend places based on user similarity scores<br>
-                  5.Collaborated in a team of 3, integrating the recommendation engine into a full-stack web app<br>
-                  6.Achieved consistent performance in delivering personalized suggestions across multiple test scenarios<br>
-                </p>  
-                  <a class="navbar-brand" href="https://github.com/Thonkla/PlaceMate-WepAppForPersonalRecommendPlaces">
-                    see more
-                  </a>
-                </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/Savia.png" alt="" class="box-img">
-              </div>
-              <div class="detail-box">
-                <div class="client_id">
-                  <div class="client_info">
-                    <h6>
-                      Personal Expense Tracking App – "Savia" – PlaceMate | Mar 2025
-                    </h6>
-                    <p>
-                      Mobile Development, Google Sheets, App Script API
-                    </p>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  <br>
-                  1.Built a mobile app to track and visualize personal spending, integrating with Google Sheets API for real-time data sync<br>
-                  2.Developed interactive dashboards with bar, pie, and line charts to monitor spending behavior<br>
-                  3.Extracted insights from 2-month usage data, helping reduce unnecessary spending by 11%<br>
-                  <br>
-                  <br>
-                  <br>
-                  
-                  <br>
-                </p>  
-                  <a class="navbar-brand" href="https://github.com/Thonkla/Savia-MobileAppExpensesAnalysis">
-                    see more
-                  </a>
-                </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/python_logo.png" alt="" class="box-img">
-              </div>
-              <div class="detail-box">
-                <div class="client_id">
-                  <div class="client_info">
-                    <h6>
-                      Build Fish Swarm Optimization Algorithm(FSA), Genetic Algorithm(GA) and others | MAY 2023
-                    </h6>
-                    <p>
-                      Researcher, Solve the problem and analyze the result
-                    </p>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  <br>
-                  1.Using Python to define FSA function, GA function, objective
-                  function and their fitness function to solve travel planning
-                  problem.<br>
-                  2.The problem give city name, days to stay and cost according
-                  to conditions use minimum cost, travel as many cities as
-                  possible and stay within 14 days.<br><br>
-                  <br>
-                  <br>
-                  <br>
-                  
-
-                </p>  
-                  <a class="navbar-brand" href="https://github.com/Thonkla/fish_swarm_optimization_and_genetic_algorithm">
-                    see more
-                  </a>
-                </div>
-  
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/dj_pos_logo.png" alt="" class="box-img">
-              </div>
-              <div class="detail-box">
-                <div class="client_id">
-                  <div class="client_info">
-                    <h6>
-                      Order Collection Queue System for coffee shop or restaurant | 
-                      Nov 2023
-                    </h6>
-                    <p>
-                      Back-end developer/ Semi-Front-end developer
-                    </p>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  <br>
-                  function:<br>
-                  1.Customers who visit site can select and order products.<br>
-                  2.Collect the order and make the queue for customer.<br>
-                  3.The queue monitor show all queue that in wait state to
-                  customers (like queue monitor in bank).<br>
-                  4.The sales representative can click next queue after order
-                  done (the queue monitor update automatically).
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                </p>
-                <a class="navbar-brand" href="https://github.com/Thonkla/django_postgre_queue_app">
-                  see more
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/gradio_logo.png" alt="" class="box-img">
-              </div>
-              <div class="detail-box">
-                <div class="client_id">
-                  <div class="client_info">
-                    <h6>
-                      Using gradio and ChatGPT API key to make Web UI English Practice
-                    </h6>
-                    <p>
-                      Developer
-                    </p>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  <br>
-                  There are 3 parts to my project<br>
-                  1 WRITING<br>
-                  2 SPEAKING<br>
-                  3 LISTENING<br><br><br><br><br><br><br>
-                </p>
-                <a class="navbar-brand" href="https://github.com/Thonkla/gradio_English_skills_practice_using_generatuve_ai">
-                  see more
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/scikit_logo.png" alt="" class="box-img">
-              </div>
-              <div class="detail-box">
-                <div class="client_id">
-                  <div class="client_info">
-                    <h6>
-                      Machine Learning Course
-                    </h6>
-                    <p>
-                      Modeller
-                    </p>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  <br>
-                  There were many parts that I learned from this course.<br>
-                  1 Supervised Learning (Single Digit Image Classification(CNN), Sentiment Analysis, etc.)<br>
-                  2 Unsupervised Learning (Clustering, Dimension Reduction, etc.)<br>
-                  3 Reinforcement Learning (Robot Navigation)<br>
-                  <br><br><br><br><br><br><br><br>
-                </p>
-              </div>
-            </div>
-          </div>
-          
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="wrap contact reveal">
+        <h2 class="title center">Let's <span>talk</span></h2>
+        <p class="center muted">Open to data science, analytics and software roles. The fastest way to reach me is email.</p>
+        <div class="contact-grid">
+          <a class="c-card" href="mailto:thonkrath@gmail.com"><i class="fa fa-envelope"></i><span>thonkrath@gmail.com</span></a>
+          <button class="c-card" id="copyEmail" type="button"><i class="fa fa-clipboard"></i><span>Copy email</span></button>
+          <a class="c-card" href="tel:+66885921510"><i class="fa fa-phone"></i><span>+66 88 592 1510</span></a>
+          <a class="c-card" href="https://linkedin.com/in/pongsakorn-srimang" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
+          <a class="c-card" href="https://github.com/Thonkla" target="_blank" rel="noopener"><i class="fa fa-github"></i><span>GitHub</span></a>
+          <div class="c-card"><i class="fa fa-map-marker"></i><span>Thung Khru, Bangkok</span></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- end client section -->
+  <footer class="footer">
+    <div class="wrap">© <span id="year"></span> Pongsakorn Srimang</div>
+  </footer>
 
+  <button id="toTop" class="to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <!-- info section -->
-
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-3 info_col" id="contact">
-          <div class="info_contact">
-            <h4>
-              Contact
-            </h4>
-            <div class="contact_link_box">
-              <a>
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Bang Mot, Thung Khru, Bangkok 10140
-                </span>
-              </a>
-              <a>
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call 088-592 1510 (+66)
-                </span>
-              </a>
-              <a>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  thonkrath@gmail.com
-                </span>
-              </a>
-              <a href="https://www.facebook.com/pongsakorn.srimang.9/">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <span>
-                  facebook
-                </span>
-              </a>
-              <a href="https://github.com/Thonkla">
-                <i class="fa fa-github" aria-hidden="true"></i>
-                <span>
-                  Github
-                </span>
-              </a>
-              <a href="http://linkedin.com/in/pongsakorn-srimang">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                <span>
-                  Linkedin
-                </span>
-              </a>
-            </div>
-          </div>
-          <!-- <div class="info_social">
-            <a href="https://www.facebook.com/pongsakorn.srimang.9/">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </div> -->
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- end info section -->
-
-  <!-- footer section -->
-  <section class="footer_section">
-    <div class="container">
-      <p>
-        &copy; 
-        <span id="displayYear"></span>
-        Pongsakorn Srimang
-      </p>
-    </div>
-  </section>
-  <!-- footer section -->
-
-  <!-- jQery -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!-- custom js -->
-  <script type="text/javascript" src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
-
+  <script src="js/main.js"></script>
 </body>
-
 </html>
